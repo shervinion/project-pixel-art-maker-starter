@@ -2,7 +2,6 @@
 // Select size input
 
 // When size is submitted by the user, call makeGrid()
-// console.log('Hello World! - by shervin');
 
 const form = document.querySelector("#sizePicker");
 const canvasTable = document.querySelector('#pixelCanvas');
@@ -10,9 +9,6 @@ const cellColor = document.querySelector('#colorPicker');
 
 
 function makeGrid() {
-    // Your code goes here!
-    //console.log('Shervin, start of code');
-
     // Clear table
     canvasTable.innerHTML = "";
 
@@ -55,7 +51,7 @@ function getGridDimension() {
 
 
 form.addEventListener('submit', function(event) {
-    // I'm not sure why submit button refreshes the page so had to use prevenetDefault.
+    // submit button's default behaviour would refresh the page so we have to use prevenetDefault.
     event.preventDefault();
     makeGrid();
     })
